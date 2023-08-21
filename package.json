@@ -1,6 +1,6 @@
 {
   "name": "iride",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Lodash but for colors",
   "author": "Mattia Dapino <mattia.dapino@hey.com>",
   "license": "MIT",
@@ -8,18 +8,21 @@
   "module": "./dist/iride.es.js",
   "types": "./dist/index.d.ts",
   "scripts": {
+    "dev": "vite build --watch -m development",
     "build": "npm run generate; vite build",
     "generate": "ts-node ./scripts/generate.ts",
-    "test": "jest"
+    "test": "jest",
+    "test:typing": "tsc --noEmit"
   },
   "devDependencies": {
-    "@rollup/plugin-typescript": "^8.3.0",
-    "@types/jest": "^27.0.2",
-    "@types/node": "^16.11.6",
-    "jest": "^27.3.1",
-    "ts-jest": "^27.0.7",
-    "ts-node": "^10.4.0",
-    "typescript": "^4.4.4",
-    "vite": "^2.6.13"
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/jest": "^29.5.3",
+    "@types/node": "^20.5.1",
+    "jest": "^29.6.3",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.6.2",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.9"
   }
 }
