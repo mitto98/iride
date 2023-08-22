@@ -1,11 +1,11 @@
 {
   "name": "iride",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Lodash but for colors",
   "author": "Mattia Dapino <mattia.dapino@hey.com>",
   "license": "MIT",
   "main": "./dist/iride.umd.js",
-  "module": "./dist/iride.es.js",
+  "module": "./dist/iride.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite build --watch -m development",
